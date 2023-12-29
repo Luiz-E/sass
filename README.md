@@ -1,0 +1,1 @@
+Repositório de estudo do [curso de SASS](https://www.youtube.com/watch?v=XwPSWKnZIg4&list=PL97KElaimHeGRtfkksKwxg6IGVZi_cR7J&index=1) por [amanda vilela](https://www.youtube.com/@amandavilela5814)
