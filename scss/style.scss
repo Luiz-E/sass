@@ -1,28 +1,73 @@
+// Introdução
+
+$width: 100%;
+$font-size: 1.2rem;
+$background: #962acd;
+$color: #fff;
+$border-style: solid 1px $color;
+
+// Tipos númericos
+
+$width-rem: 3.5rem;
+$width-px: 300px;
+$width: 300;
+
+// Strings
+
+$font: "Lucida Grande";
+$weight: bold;
+
+// Cores
+
+$bg: red;
+//$bg-section: rgba(0,0,0,0.7);
+//$bg-section: rgb(0,0,0);
+$bg-section: rgb(100,0,0);
+$font-color: #fff;
+
+// Boolean e null
+
+$color-light: false;
+$color-dark: true;
+$color-dark: null;
+
+//Listas
+
+//$animals: puma, sea-slug, egret, salamander;
+//$animals: puma sea-slug egret salamander;
+$animals: "puma", "sea-slug", "egret", "salamander";
+$margin: 10px 20px 15px 20px;
+
+//Maps
+
+$social: (
+    facebook: #3b4998,
+    flickr: #0053db,
+    github: #4183c4,
+    googleplus: #dd4b39,
+    instagram: #417fa4
+    linkedin: #007bb6,
+);
+
+body {
+    background: $bg;
+    color: $font-color;
+}
+
 nav {
-    width: 100%;
-    background: #000;
+    background: $background;
+    color: $color;
+    width: $width;
+    font-size: $font-size;
+}
 
-    ul {
-        list-style: none;
-        padding: 20px 0;
-    }
+aside {
+    width: $width-px;
+}
 
-    li {
-        color: red;
-        margin: 0 20px;
-
-        font: {
-            family: Arial;
-            size: 14px;
-            weight: bold;
-        }
-    }
-
-    a {
-        color: red;
-        &:hover {
-            color: blue;
-        }
-    }
-
+section {
+    font-family: $font;
+    font-weight: $weight;
+    background: $bg-section;
+    margin: $margin;
 }
