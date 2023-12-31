@@ -1,6 +1,39 @@
-p.destaque {
-  border-color: blue;
-  font: 12px/30px;
+.msg, .msg-alert, .msg-error {
+  border: 1px solid;
+  padding: 4px;
+  text-align: center;
+}
+
+.msg-error {
+  border-color: #ff0;
+  color: #ff0000;
+}
+
+.msg-alert {
+  border-color: #ff8e00;
+  color: #ff8e00;
+}
+
+a:hover, .hoverlink:hover {
+  text-decoration: underline;
+}
+
+.hoverlink {
+  color: #000;
+}
+
+.error, .seriousError {
+  border: 1px #f00;
+  border-right-color: #fdd;
+}
+
+.attention, .seriousError {
+  font-size: 3em;
+  background-color: #ff0;
+}
+
+.seriousError {
+  border-width: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */

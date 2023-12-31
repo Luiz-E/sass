@@ -1,9 +1,42 @@
-$name: destaque;
-$attr: border;
+.msg {
+    border: 1px solid;
+    padding: 4px;
+    text-align: center;
+}
 
-p.#{$name} {
-    #{$attr}-color: blue;
-    $font-size: 12px;
-    $line-height: 30px;
-    font: #{$font-size}/#{$line-height}
+.msg-error {
+    @extend .msg;
+    border-color: #ff0;
+    color: #ff0000;
+}
+
+.msg-alert {
+    @extend .msg;
+    border-color: #ff8e00;
+    color: #ff8e00;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hoverlink {
+    @extend a;
+    color: #000;
+}
+
+.error {
+    border: 1px #f00;
+    border-right-color: #fdd;
+}
+
+.attention {
+    font-size: 3em;
+    background-color: #ff0;
+}
+
+.seriousError {
+    @extend .error;
+    @extend .attention;
+    border-width: 3px;
 }
