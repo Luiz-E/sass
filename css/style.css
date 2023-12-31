@@ -1,17 +1,6 @@
-/* Error: expected ")".
- *    ,
- * 49 |     linkedin: #007bb6,
- *    |             ^
- *    '
- *   scss/style.scss 49:13  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ")".\a    \2577 \a 49 \2502      linkedin: #007bb6,\a    \2502              ^\a    \2575 \a   scss/style.scss 49:13  root stylesheet';
+p.destaque {
+  border-color: blue;
+  font: 12px/30px;
 }
+
+/*# sourceMappingURL=style.css.map */

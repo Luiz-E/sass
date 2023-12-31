@@ -1,73 +1,9 @@
-// Introdução
+$name: destaque;
+$attr: border;
 
-$width: 100%;
-$font-size: 1.2rem;
-$background: #962acd;
-$color: #fff;
-$border-style: solid 1px $color;
-
-// Tipos númericos
-
-$width-rem: 3.5rem;
-$width-px: 300px;
-$width: 300;
-
-// Strings
-
-$font: "Lucida Grande";
-$weight: bold;
-
-// Cores
-
-$bg: red;
-//$bg-section: rgba(0,0,0,0.7);
-//$bg-section: rgb(0,0,0);
-$bg-section: rgb(100,0,0);
-$font-color: #fff;
-
-// Boolean e null
-
-$color-light: false;
-$color-dark: true;
-$color-dark: null;
-
-//Listas
-
-//$animals: puma, sea-slug, egret, salamander;
-//$animals: puma sea-slug egret salamander;
-$animals: "puma", "sea-slug", "egret", "salamander";
-$margin: 10px 20px 15px 20px;
-
-//Maps
-
-$social: (
-    facebook: #3b4998,
-    flickr: #0053db,
-    github: #4183c4,
-    googleplus: #dd4b39,
-    instagram: #417fa4
-    linkedin: #007bb6,
-);
-
-body {
-    background: $bg;
-    color: $font-color;
-}
-
-nav {
-    background: $background;
-    color: $color;
-    width: $width;
-    font-size: $font-size;
-}
-
-aside {
-    width: $width-px;
-}
-
-section {
-    font-family: $font;
-    font-weight: $weight;
-    background: $bg-section;
-    margin: $margin;
+p.#{$name} {
+    #{$attr}-color: blue;
+    $font-size: 12px;
+    $line-height: 30px;
+    font: #{$font-size}/#{$line-height}
 }
