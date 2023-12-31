@@ -1,0 +1,10 @@
+button {
+    padding: 5px;
+    border: 1px solid rgb(32, 0, 44);
+    background-color: #fff;
+}
+
+.btn-follow {
+    @extend button;
+    background-color: #0000d7;
+}
