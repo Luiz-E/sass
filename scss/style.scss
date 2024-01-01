@@ -1,42 +1,48 @@
-.msg {
-    border: 1px solid;
-    padding: 4px;
-    text-align: center;
+
+h1 {
+    //font-size: 22px + 2em;
+    //font-size: 5px * 2px;
+    
+    font-size: 5px + 2;
+    font-size: 5px - 2;
 }
 
-.msg-error {
-    @extend .msg;
-    border-color: #ff0;
-    color: #ff0000;
+$base-size: 20px;
+$line-height: 22px;
+
+
+p {
+    font: 10xp/8px bold italic serif;
+    $width: 1000px;
+    width: calc($width/2);
+    width: calc(round(1.5)/2);
+    height: calc(500px/2);
+    margin-left: 5px  + calc(8px/2px);
+    font: (italic bold 10px/8px);
+    font-size: #{$base-size} / #{$line-height};
 }
 
-.msg-alert {
-    @extend .msg;
-    border-color: #ff8e00;
-    color: #ff8e00;
+$font-size: 27px;
+
+p {
+    font-size: $font-size % 2;
 }
 
-a:hover {
-    text-decoration: underline;
+p {
+    //color: #010203 + #040506;
+    //color: #020406 * 2;
+    //color: rgba(255, 0, 0, 0.75) + rgba(0, 255, 0, 0.75);
 }
 
-.hoverlink {
-    @extend a;
-    color: #000;
+p {
+    cursor: e + -resize;
 }
 
-.error {
-    border: 1px #f00;
-    border-right-color: #fdd;
+p:before {
+    content: "Eu tenho #{2 + 10} moedas";
 }
 
-.attention {
-    font-size: 3em;
-    background-color: #ff0;
-}
-
-.seriousError {
-    @extend .error;
-    @extend .attention;
-    border-width: 3px;
+#value: null;
+p:before {
+    content: "Eu tenho #{value} moedas.";
 }
