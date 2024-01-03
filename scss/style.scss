@@ -42,7 +42,7 @@ p:before {
     content: "Eu tenho #{2 + 10} moedas";
 }
 
-#value: null;
+$value: null;
 p:before {
-    content: "Eu tenho #{value} moedas.";
+    content: "Eu tenho #{$value} moedas.";
 }
